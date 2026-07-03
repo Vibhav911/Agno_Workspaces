@@ -11,7 +11,7 @@ os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 
 agent = Agent(
      model=Groq(id="llama-3.3-70b-versatile"),
-     description="You are a assistant. Please reply to the user's queries",
+     description="You are an assistant. Please reply to the user's queries. Use only DuckDuckGo for web searches.",
      tools=[DuckDuckGoTools()],
      markdown=True
 )
